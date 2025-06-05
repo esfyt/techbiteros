@@ -42,3 +42,65 @@ function typeWriter() {
 }
 typeWriter();
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href'))
+      .scrollIntoView({ behavior: 'smooth' });
+  });
+});
+const countdownElement = document.getElementById('countdown');
+const launchDate = new Date('2025-12-31T00:00:00').getTime();
+
+function updateCountdown() {
+  const now = new Date().getTime();
+  const diff = launchDate - now;
+
+  if (diff < 0) {
+    countdownElement.textContent = "TechBiter OS is Live!";
+    clearInterval(intervalId);
+    return;
+  }
+
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+  countdownElement.textContent = `Launch in ${days}d ${hours}h ${minutes}m ${seconds}s`;
+}
+
+const intervalId = setInterval(updateCountdown, 1000);
+updateCountdown();
+const modal = document.getElementById('modal');
+const closeModal = document.getElementById('closeModal');
+
+window.onload = () => {
+  modal.style.display = 'flex';
+};
+
+closeModal.onclick = () => {
+  modal.style.display = 'none';
+};
+
+window.onclick = (event) => {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+};
+const images = document.querySelectorAll('.carousel-img');
+let currentIndex = 0;
+
+function showImage(index) {
+  images.forEach((img, i) => {
+    img.classList.toggle('active', i === index);
+  });
+}
+
+function nextImage() {
+  currentIndex = (currentIndex + 1) % images.length;
+  showImage(currentIndex);
+}
+
+showImage(currentIndex);
+setInterval(nextImage, 3000);
