@@ -29,3 +29,16 @@ modeToggle.addEventListener('click', () => {
 });
 
 // Optional: CSS styles to support this toggle (add to your CSS)
+const typewriterText = "Welcome to TechBiter OS";
+const typewriterElement = document.getElementById('typewriter');
+let idx = 0;
+
+function typeWriter() {
+  if (idx < typewriterText.length) {
+    typewriterElement.textContent += typewriterText.charAt(idx);
+    idx++;
+    setTimeout(typeWriter, 100); // typing speed in ms
+  }
+}
+typeWriter();
+
