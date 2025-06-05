@@ -23,3 +23,9 @@ function updateHeadingColor() {
 
 // Call updateHeadingColor every 2 seconds indefinitely
 setInterval(updateHeadingColor, 2000);
+const modeToggle = document.getElementById('modeToggle');
+modeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('light-mode');
+});
+
+// Optional: CSS styles to support this toggle (add to your CSS)
