@@ -84,3 +84,21 @@ footer {
   padding: 20px;
   color: #777;
 }
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+body.light-mode {
+  background-color: #f0f0f0;
+  color: #121212;
+}
+
+#modeToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
