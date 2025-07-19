@@ -2,83 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TechBiter OS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechBiter OS — Krismas Release</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>TechBiter OS</h1>
-    <p>A lightning-fast, beautiful, and powerful Linux experience built for students, creators, and everyday users.</p>
-    <a href="#download" class="btn">⬇️ Download Now</a>
+    <div class="container nav">
+      <div class="logo">
+        <img src="logo.png" alt="TechBiter OS Logo" />
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#download">Download</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h2>What is TechBiter OS?</h2>
-    <p>
-      TechBiter OS is a modern Linux distribution designed to be fast, lightweight, and easy to customize.
-      Whether you're a developer, a student, or just someone who loves tech, TechBiter OS gives you a clean and clutter-free environment to get things done.
-    </p>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>TechBiter OS 2025.1 <span class="highlight">'Krismas'</span></h1>
+      <p class="tagline">Fast. Secure. Linux like never before.</p>
+      <div id="countdown"></div>
+      <a href="#download" class="btn">Explore Downloads</a>
+    </div>
   </section>
 
-  <section>
-    <h2>Features You'll Love</h2>
-    <ul>
-      <li>⚡ Ultra-Fast Boot and Performance</li>
-      <li>🎨 Fully Customizable Desktop Environment</li>
-      <li>🔐 Advanced Privacy & Security Options</li>
-      <li>🧰 Pre-installed Dev Tools & Utilities</li>
-      <li>📦 Lightweight, yet Powerful Core</li>
-      <li>🖥️ Compatible with Low-Spec PCs</li>
-    </ul>
+  <section id="download" class="section dark">
+    <div class="container">
+      <h2>Changelog</h2>
+      <ul class="changelog">
+        <li><strong>2025.1 'Krismas'</strong> — 🎄 Official stable release (25 Dec 2025)</li>
+        <li><strong>2025.0 Beta 3</strong> — UI refinements, performance boost</li>
+        <li><strong>2025.0 Beta 2</strong> — Improved driver support</li>
+        <li><strong>2025.0 Beta 1</strong> — First testable ISO build</li>
+      </ul>
+    </div>
   </section>
 
-  <section>
-    <h2>See It In Action</h2>
-    <p>Explore the clean UI, powerful terminal, and beautifully themed environment of TechBiter OS.</p>
-    <img src="assets/images/desktop.png" alt="TechBiter OS Desktop" />
-    <img src="assets/images/settings.png" alt="Settings Panel" />
-  </section>
-
-  <section id="download">
-    <h2>Download TechBiter OS</h2>
-    <p>Get started with the latest version of TechBiter OS.</p>
-    <a href="https://your-download-link.com/techbiter.iso" class="btn">⬇️ Download ISO</a>
-    <p><strong>Minimum Requirements:</strong> 2GB RAM, 20GB Disk Space, 64-bit Processor</p>
-  </section>
-
-  <section>
-    <h2>Documentation & Help</h2>
-    <p>New to Linux or TechBiter OS? Don’t worry. We’ve got guides to help you install, use, and customize your system.</p>
-    <a href="https://github.com/your-github/wiki" class="btn">📘 Read the Docs</a>
-  </section>
-
-  <section>
-    <h2>Join the Project</h2>
-    <p>TechBiter OS is open-source and growing. You can help improve it, fix bugs, or suggest features.</p>
-    <a href="https://github.com/your-github/techbiter-os" class="btn">🔧 GitHub Repository</a>
-  </section>
-
-  <section>
-    <h2>News & Updates</h2>
-    <ul>
-      <li><strong>v1.0 Released!</strong> – The first stable version of TechBiter OS is now available. <a href="#">Read more</a></li>
-      <li><strong>Community Forum Coming Soon</strong></li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Contact Us</h2>
-    <p>Have feedback, questions, or need support? Reach out to us!</p>
-    <ul>
-      <li>Email: techbiteros@gmail.com</li>
-      <li><a href="https://github.com/your-github">GitHub</a></li>
-    </ul>
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="soon">Helplines coming soon!</p>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 TechBiter OS. Made with ❤️ by Pushkar Agrawal.</p>
+    <div class="container">
+      <p>&copy; 2025 TechBiter OS. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
-
