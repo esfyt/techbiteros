@@ -1,5 +1,5 @@
 // Launch date for TechBiter OS (25 Dec 2025)
-const launchDate = new Date("2025-12-25T00:00:00").getTime();
+const launchDate = new Date("2026-05-31T15:00:00").getTime();
 
 const countdownEl = document.getElementById("countdown");
 
