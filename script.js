@@ -1,5 +1,5 @@
-// Launch date for TechBiter OS (25 Dec 2025)
-const launchDate = new Date("2026-05-31T15:00:00").getTime();
+// Launch date for TechBiter OS Dev Preview 1 (3 Jun 2026)
+const launchDate = new Date("2026-06-03T20:00:00").getTime();
 
 const countdownEl = document.getElementById("countdown");
 
@@ -8,7 +8,7 @@ function updateCountdown() {
   const timeLeft = launchDate - now;
 
   if (timeLeft <= 0) {
-    countdownEl.innerHTML = "<strong>🎉 TechBiter OS is Live! Download Now!</strong>";
+    countdownEl.innerHTML = "<strong>🎉 TechBiter OS Dev Preview 1 is Live! Download Now!</strong>";
     return;
   }
 
